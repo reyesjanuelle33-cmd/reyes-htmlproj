@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* SCROLL BEHAVIOR: smooth ang pag-scroll papunta sa section */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* NAVIGATION: naka-fix sa taas */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #141414;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4da3ff;
+}
+
+/* SECTION: kasing taas ng screen, nasa gitna ang laman */
+section {
+    min-height: 100vh;
+    padding: 100px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Magkaiba ng kulay ang section para kita ang paglipat */
+#about,
+#projects {
+    background-color: #111111;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #4da3ff;
+}
+
+/* HOME: profile sa kaliwa, info sa kanan */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #4da3ff;
+    background-color: #1e293b;
+    box-shadow: 0 0 25px #4da3ff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px;
+    text-align: left;
+}
+
+.quote {
+    padding-left: 15px;
+    border-left: 4px solid #4da3ff;
+    font-style: italic;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: 2px solid #4da3ff;
+    border-radius: 30px;
+    background-color: #4da3ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.outline {
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: white;
+    border-color: white;
+    color: #0a0a0a;
+}
+
+/* ROW: magkakatabi ang cards */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    width: 220px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.wide {
+    width: 400px;
+}
+
+.card:hover {
+    background-color: #4da3ff;
+    color: #0a0a0a;
+}
+
+/* PICTURE sa loob ng card (Projects) */
+.card img {
+    width: 100%;
+    height: 140px;
+    background-color: #333333;
+    margin-bottom: 10px;
+}
